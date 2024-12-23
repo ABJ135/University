@@ -6,13 +6,7 @@ const userSchema = new Schema({
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
     age: Number,
-    role: { type: String, required: true },
-    createdAt: { type: Date, default: Date.now() },
-    borrowedBook: [{
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Book",
-      required: false,
-    }]
+    role: { type: String, required: true }
 });
 
 const user = mongoose.model("user", userSchema);

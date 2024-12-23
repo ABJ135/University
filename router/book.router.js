@@ -13,4 +13,8 @@ router.get('/id/:id',controller.getById)
 
 router.get('/search',controller.search)
 
+router.get('/parameter1',controller.parameter1)
+
+
+
 module.exports = router
